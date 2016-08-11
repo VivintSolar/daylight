@@ -8,5 +8,8 @@
   ],
   "ignore": [
     "**/.*"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "http://npm.gosolar.com"
+  }
 }
