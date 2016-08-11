@@ -1,0 +1,98 @@
+.sunset {
+    font-size: $font__size--300;
+    margin-bottom: $spacing--500;
+    @extend .content;
+    h3 {
+        font-size: $font__size--500;
+        border-bottom: 1px solid #5C5C60;
+        padding-bottom: $spacing--50;
+        margin-top: $spacing--200;
+        margin-bottom: $spacing--200;
+        font-weight: 500;
+    }
+    h4 {
+        color: $color__gray--600;
+        font-size: $font__size--300;
+        margin: 0;
+        line-height: $font__line-height--500;
+    }
+    a {
+      color: inherit;
+    }
+    a:focus, a:hover {
+      color: $color__blue;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 0;
+        font-size: $font__size--300;
+        line-height: $font__line-height--600;
+        @media (min-width: $breakpoint--500) {
+            line-height: $font__line-height--500;
+        }
+    }
+    dl {
+        margin: 0;
+    }
+    dt {
+        margin-top: $spacing--200;
+        font-weight: 100;
+    }
+    dd {
+        margin-left: 0;
+    }
+
+    &__logo {
+        background: transparent url(../img/vivint.solar.logo.svg) 0 0 no-repeat;
+        background-size: contain;
+        height: $spacing--500;
+        text-indent: -100%;
+    }
+    &__details {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    &__contact {
+        @include lumen-layout-width(( 300:4, 400:4, 500:2, 600: 2, 700:2));
+    }
+    &__company {
+        @include lumen-layout-width(( 300:4, 400:4, 500:8, 600: 8, 700:8));
+        .layout {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            &__item,
+            &:before,
+            &:after {
+                @include lumen-layout-width(( 300:4, 400:4, 500:2, 600: 2, 700:2));
+            }
+        }
+    }
+    &__offices {
+        margin-top: 30px;
+        padding-top: 10px;
+        border-top: 1px solid $color__gray--700;
+    }
+    &__address,
+    &__regional {
+        @include lumen-layout-width(( 300:4, 400:4, 500:4, 600: 4, 700:4));
+    }
+    &__partners {
+        @include lumen-layout-width(( 300:4, 400:4, 500:2, 600: 2, 700:2));
+    }
+    
+    &__copyright {
+        margin-top: $spacing--500;
+        font-size: $font__size--200;
+        color: $color__gray--600;
+    }
+    &__corp-links a {
+        display: inline-block;
+        margin-right: $spacing--300;
+    }
+}

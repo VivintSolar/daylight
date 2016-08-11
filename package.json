@@ -1,0 +1,12 @@
+{
+  "name": "daylight",
+  "version": "0.0.1",
+  "description": "The common header and footer for vivint solar.",
+  "keywords": [
+    "header",
+    "footer"
+  ],
+  "ignore": [
+    "**/.*"
+  ]
+}
