@@ -1,7 +1,7 @@
 .sunset {
     font-size: $font__size--300;
     margin-bottom: $spacing--500;
-    @extend .content;
+    /*@extend .content;*/
     h3 {
         font-size: $font__size--500;
         border-bottom: 1px solid #5C5C60;
@@ -15,6 +15,7 @@
         font-size: $font__size--300;
         margin: 0;
         line-height: $font__line-height--500;
+        font-weight: 100;
     }
     a {
       color: inherit;
@@ -47,7 +48,7 @@
     }
 
     &__logo {
-        background: transparent url(../img/vivint.solar.logo.svg) 0 0 no-repeat;
+        background: transparent url(http://assets.vivintcdn.com/global/solar/homego/img/vs-logo.svg) 0 0 no-repeat;
         background-size: contain;
         height: $spacing--500;
         text-indent: -100%;
