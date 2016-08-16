@@ -48,9 +48,9 @@
     }
 
     &__logo {
-        background: transparent url(http://assets.vivintcdn.com/global/solar/homego/img/vs-logo.svg) 0 0 no-repeat;
+        background: transparent url(https://home.vivintsolar.com/img/vivint.solar.logo.svg) 0 0 no-repeat;
         background-size: contain;
-        height: $spacing--500;
+        height: $spacing--300;
         text-indent: -100%;
     }
     &__details {
@@ -91,9 +91,15 @@
         margin-top: $spacing--500;
         font-size: $font__size--200;
         color: $color__gray--600;
+        a {
+            color: $color__blue;
+            text-decoration: underline;
+        }
     }
     &__corp-links a {
         display: inline-block;
         margin-right: $spacing--300;
+        color: $color__blue;
+        text-decoration: underline;
     }
 }
