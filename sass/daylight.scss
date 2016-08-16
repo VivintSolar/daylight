@@ -3,9 +3,6 @@ $includeBase: false;
 @import '../node_modules/lumen-layout/lumen-layout';
 
 /*@include lumen-content();*/
-
-@import '../components/sunrise/sunrise';
-@import '../components/sunset/sunset';
 .sunrise, .sunset, .sunrise-menu {
     font-family: $font__family--sans;
     &,
@@ -50,6 +47,9 @@ body {
   margin: 0;
   font-size: $font__size--500;
   line-height: $font__line-height--500;
-  color: $color__gray--700;
+  /*color: $color__gray--700;*/
   text-rendering: optimizeLegibility;
 }
+
+@import '../components/sunrise/sunrise';
+@import '../components/sunset/sunset';
