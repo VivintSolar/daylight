@@ -5,6 +5,9 @@ $includeBase: false;
 /*@include lumen-content();*/
 .sunrise, .sunset, .sunrise-menu {
     font-family: $font__family--sans;
+    color: $color__gray--700;
+    letter-spacing: .5px;
+    font-weight: 200;
     &,
     &:before,
     &:after {

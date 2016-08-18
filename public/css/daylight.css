@@ -28,11 +28,94 @@ $color__sh-silver: ;*/
   font-family: "IntCircularPro";
   font-style: normal;
   font-weight: 700;
-  src: url("http://wwwassets.s3.amazonaws.com/global/solar/fonts/IntCircularProWeb-Black.woff") format("woff");
+  src: url("http://wwwassets.s3.amazonaws.com/global/solar/fonts/IntCircularProWeb-Bold.woff") format("woff");
 }
 
 /*$box__shadow: 0 0 4px $color__black--translucent;*/
 /*@include lumen-content();*/
+.sunrise, .sunset, .sunrise-menu {
+  font-family: IntCircularPro, Arial, sans-serif;
+  color: #656569;
+  letter-spacing: .5px;
+  font-weight: 200;
+}
+
+.sunrise, .sunrise:before, .sunrise:after, .sunset, .sunset:before, .sunset:after, .sunrise-menu, .sunrise-menu:before, .sunrise-menu:after {
+  box-sizing: border-box;
+}
+
+.sunrise *, .sunrise *:before, .sunrise *:after, .sunset *, .sunset *:before, .sunset *:after, .sunrise-menu *, .sunrise-menu *:before, .sunrise-menu *:after {
+  box-sizing: border-box;
+}
+
+.sunrise a, .sunset a, .sunrise-menu a {
+  text-decoration: none;
+}
+
+.sunrise a[href^=tel], .sunset a[href^=tel], .sunrise-menu a[href^=tel] {
+  text-decoration: none;
+  cursor: default;
+  color: inherit;
+}
+
+.sunrise a[href^=tel]:hover, .sunset a[href^=tel]:hover, .sunrise-menu a[href^=tel]:hover {
+  color: inherit !important;
+}
+
+.sunrise, .sunset {
+  width: 83.2vw;
+  margin-left: 8.4vw;
+}
+
+@media (min-width: 700px) {
+  .sunrise, .sunset {
+    width: 88vw;
+    margin-left: 6vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .sunrise, .sunset {
+    width: 90.4vw;
+    margin-left: 4.8vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sunrise, .sunset {
+    width: 92.8vw;
+    margin-left: 3.6vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .sunrise, .sunset {
+    width: 71vw;
+    margin-left: 14.5vw;
+  }
+}
+
+html {
+  font-family: IntCircularPro, Arial, sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  font-size: 62.5%;
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  /*color: $color__gray--700;*/
+  text-rendering: optimizeLegibility;
+}
+
 .sunrise {
   background: #fff;
   position: fixed;
@@ -47,6 +130,8 @@ $color__sh-silver: ;*/
   line-height: 1;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-align: center;
@@ -59,7 +144,7 @@ $color__sh-silver: ;*/
   margin-left: 0 !important;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .sunrise {
     margin-left: -6vw;
     padding-left: 6vw;
@@ -67,7 +152,7 @@ $color__sh-silver: ;*/
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunrise {
     margin-left: -4.8vw;
     padding-left: 4.8vw;
@@ -111,30 +196,17 @@ $color__sh-silver: ;*/
 }
 
 .sunrise__logo {
-  height: 20px;
   margin-right: 16px;
+  display: inline-block;
 }
 
-.sunrise__cta {
-  text-align: right;
+.sunrise__logo img {
+  /*height: 20px;*/
+  width: 175px;
 }
 
-.sunrise > * {
-  /*flex:1;*/
-}
-
-.sunrise .flex {
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center;
-  height: 100%;
-}
-
-.sunrise .flex .flex-cell {
-  -ms-flex: 1;
-  flex: 1;
+.sunrise--menu-top .sunrise__menu--trigger {
+  display: none;
 }
 
 .sunrise-menu {
@@ -174,6 +246,10 @@ $color__sh-silver: ;*/
   text-indent: 100%;
 }
 
+.sunrise--menu-top .sunrise-menu__close {
+  display: none;
+}
+
 .sunrise-menu ul {
   list-style: none;
   margin: 0;
@@ -183,7 +259,7 @@ $color__sh-silver: ;*/
 
 .sunrise-menu ul li a,
 .sunrise-menu ul li a:visited {
-  padding: 10px;
+  padding: 8px;
   display: block;
   color: #5C5C60;
 }
@@ -216,9 +292,35 @@ $color__sh-silver: ;*/
   cursor: pointer;
 }
 
+.sunrise--menu-top .sunrise-menu {
+  position: static;
+  max-width: 100%;
+  margin-left: auto;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.sunrise--menu-top .sunrise-menu ul {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sunrise--menu-top .sunrise-menu li {
+  margin: 0;
+}
+
+.sunrise--menu-top .sunrise-menu a {
+  padding: 8px 8px;
+  font-weight: 200;
+}
+
+.sunrise--menu-top .sunrise-menu__hide-large {
+  display: none;
+}
+
 .sunset {
   font-size: 1.4rem;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   /*@extend .content;*/
 }
 
@@ -226,8 +328,8 @@ $color__sh-silver: ;*/
   font-size: 1.8rem;
   border-bottom: 1px solid #5C5C60;
   padding-bottom: 6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-weight: 500;
 }
 
@@ -259,7 +361,7 @@ $color__sh-silver: ;*/
   line-height: 1.6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunset li {
     line-height: 1.4;
   }
@@ -270,7 +372,7 @@ $color__sh-silver: ;*/
 }
 
 .sunset dt {
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 100;
 }
 
@@ -279,9 +381,10 @@ $color__sh-silver: ;*/
 }
 
 .sunset__logo {
-  background: transparent url(http://assets.vivintcdn.com/global/solar/homego/img/vs-logo.svg) 0 0 no-repeat;
+  background: transparent url(https://home.vivintsolar.com/img/vivint.solar.logo.svg) 0 0 no-repeat;
   background-size: contain;
-  height: 40px;
+  /*height: $spacing--300;*/
+  width: 175px;
   text-indent: -100%;
 }
 
@@ -298,13 +401,13 @@ $color__sh-silver: ;*/
   width: 83.2vw;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .sunset__contact {
     width: 26.66667vw;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunset__contact {
     width: 12.4vw;
   }
@@ -326,13 +429,13 @@ $color__sh-silver: ;*/
   width: 83.2vw;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .sunset__company {
     width: 26.66667vw;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunset__company {
     width: 59.2vw;
   }
@@ -363,13 +466,13 @@ $color__sh-silver: ;*/
   width: 83.2vw;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .sunset__company .layout__item, .sunset__company .layout:before, .sunset__company .layout:after {
     width: 26.66667vw;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunset__company .layout__item, .sunset__company .layout:before, .sunset__company .layout:after {
     width: 12.4vw;
   }
@@ -397,13 +500,13 @@ $color__sh-silver: ;*/
   width: 83.2vw;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .sunset__address, .sunset__regional {
     width: 26.66667vw;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunset__address, .sunset__regional {
     width: 28vw;
   }
@@ -425,13 +528,13 @@ $color__sh-silver: ;*/
   width: 83.2vw;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 700px) {
   .sunset__partners {
     width: 26.66667vw;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .sunset__partners {
     width: 12.4vw;
   }
@@ -450,92 +553,19 @@ $color__sh-silver: ;*/
 }
 
 .sunset__copyright {
-  margin-top: 40px;
+  margin-top: 42px;
   font-size: 1.2rem;
   color: #959497;
 }
 
+.sunset__copyright a {
+  color: #57C1E8;
+  text-decoration: underline;
+}
+
 .sunset__corp-links a {
   display: inline-block;
-  margin-right: 15px;
-}
-
-.sunrise, .sunset, .sunrise-menu {
-  font-family: IntCircularPro, Arial, sans-serif;
-}
-
-.sunrise, .sunrise:before, .sunrise:after, .sunset, .sunset:before, .sunset:after, .sunrise-menu, .sunrise-menu:before, .sunrise-menu:after {
-  box-sizing: border-box;
-}
-
-.sunrise *, .sunrise *:before, .sunrise *:after, .sunset *, .sunset *:before, .sunset *:after, .sunrise-menu *, .sunrise-menu *:before, .sunrise-menu *:after {
-  box-sizing: border-box;
-}
-
-.sunrise a, .sunset a, .sunrise-menu a {
-  text-decoration: none;
-}
-
-.sunrise a[href^=tel], .sunset a[href^=tel], .sunrise-menu a[href^=tel] {
-  text-decoration: none;
-  cursor: default;
-  color: inherit;
-}
-
-.sunrise a[href^=tel]:hover, .sunset a[href^=tel]:hover, .sunrise-menu a[href^=tel]:hover {
-  color: inherit !important;
-}
-
-.sunrise, .sunset {
-  width: 83.2vw;
-  margin-left: 8.4vw;
-}
-
-@media (min-width: 640px) {
-  .sunrise, .sunset {
-    width: 88vw;
-    margin-left: 6vw;
-  }
-}
-
-@media (min-width: 768px) {
-  .sunrise, .sunset {
-    width: 90.4vw;
-    margin-left: 4.8vw;
-  }
-}
-
-@media (min-width: 1200px) {
-  .sunrise, .sunset {
-    width: 92.8vw;
-    margin-left: 3.6vw;
-  }
-}
-
-@media (min-width: 1500px) {
-  .sunrise, .sunset {
-    width: 71vw;
-    margin-left: 14.5vw;
-  }
-}
-
-html {
-  font-family: IntCircularPro, Arial, sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  font-size: 62.5%;
-}
-
-/**
- * Remove default margin.
- */
-body {
-  margin: 0;
-  font-size: 1.8rem;
-  line-height: 1.4;
-  color: #656569;
-  text-rendering: optimizeLegibility;
+  margin-right: 16px;
+  color: #57C1E8;
+  text-decoration: underline;
 }

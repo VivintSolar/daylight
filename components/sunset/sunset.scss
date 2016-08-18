@@ -50,7 +50,8 @@
     &__logo {
         background: transparent url(https://home.vivintsolar.com/img/vivint.solar.logo.svg) 0 0 no-repeat;
         background-size: contain;
-        height: $spacing--300;
+        /*height: $spacing--300;*/
+        width: 175px;
         text-indent: -100%;
     }
     &__details {

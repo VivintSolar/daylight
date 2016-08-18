@@ -6,33 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/daylight.css" />
 </head>
-<body style="background: #ccc">
+<body>
     <header class="sunrise">
-    <a href="http://www.vivintsolar.com/"><img class="sunrise__logo" src="http://assets.vivintcdn.com/global/solar/homego/img/vs-logo.svg" alt="Vivint Solar logo"></a>
+    <a href="http://www.vivintsolar.com/" class="sunrise__logo"><img src="https://home.vivintsolar.com/img/vivint.solar.logo.svg" alt="Vivint Solar logo"></a>
     <div class="sunrise__menu">
         <a class="sunrise__menu--trigger" href="#menu">Menu</a>
+        <nav class="sunrise-menu">
+            <a class="sunrise-menu__close" href="#">Close</a>
+            <ul>
+                <li><a href="http://www.vivintsolar.com/how-it-works">How It Works</a></li>
+                <li><a href="http://www.vivintsolar.com/go-solar">Go Solar</a></li>
+                <li><a href="http://www.vivintsolar.com/customer-stories">Customer Stories</a></li>
+                <li class="sunrise-menu__hide-large"><a href="http://www.vivintsolar.com/company">Company</a></li>
+                <li class="sunrise-menu__hide-large"><a href="http://investors.vivintsolar.com/">Investor Relations</a></li>
+                <li><a href="http://www.vivintsolar.com/company#coverage">Check Availability</a></li>
+            </ul>
+        </nav>
     </div>
     <div id="sunrise__cta">
         <p class="sunrise__phone"><span class="hide-mobile">CALL&nbsp;NOW:&nbsp;</span><a href="tel:18884665531">1&#8209;888&#8209;466&#8209;5531</a></p>
     </div>
+    
+    <div class="sunrise-menu__overlay"></div>
+    
 </header>
 <div class="sunrise-placeholder"></div>
-
-<div class="sunrise-menu__overlay"></div>
-<nav class="sunrise-menu">
-    <a class="sunrise-menu__close" href="#">Close</a>
-    <ul>
-        <li><a href="http://www.vivintsolar.com/how-it-works">How It Works</a></li>
-        <li><a href="http://www.vivintsolar.com/go-solar">Go Solar</a></li>
-        <li><a href="http://www.vivintsolar.com/customer-stories">Customer Stories</a></li>
-        <li><a href="http://www.vivintsolar.com/company">Company</a></li>
-        <li><a href="http://investors.vivintsolar.com/">Investor Relations</a></li>
-        <li><a href="http://www.vivintsolar.com/company#coverage">Check Availability</a></li>
-    </ul>
-</nav>
-
     
     <div class="body" style="height:400px;"></div>
+<!--
+New menu, show first four links until they don't fit and then go to hamburger.
+How to make logo an h1 only on homepage?
+ -->
     
     <footer class="sunset">
     <h2 class="sunset__logo">Vivint.Solar</h2>
@@ -72,7 +76,7 @@
                     <h4 class="type">MAIN OFFICE</h4>
                     <div class="street-address">1800 Ashton Blvd</div>
                     <span class="locality">Lehi</span>,
-                    <abbr class="region" title="Utah">UT</abbr>
+                    <span class="region" title="Utah">UT</span>
                     <span class="postal-code">84043</span>
                     <div class="tel">
                         <span class="type">T</span>: <a href="tel:18774044129">1-877-404-4129</a>
