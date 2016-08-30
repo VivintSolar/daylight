@@ -1,0 +1,74 @@
+footer.sunset
+    h2.sunset__logo Vivint.Solar
+    .sunset__details
+        .sunset__contact
+            h3 Contact:
+        .sunset__company
+            h3 Company:
+                .sunset__company-links.lumen-layout
+                each menu in menus
+                    ul.lumen-layout__item
+                        each item, key in menu.menu
+                            li
+                                a(href="#{item.link}") #{item.text}
+                .sunset__offices
+                    .sunset__address
+                        h4.type MAIN OFFICE
+                        .street-address 1800 Ashton Blvd
+                        span.locality  Lehi
+                        span.region(title="Utah") UT
+                        span.postal-code 84043
+                        .tel
+                            span.type T:
+                            a(href="tel:18774044129") 1-877-404-4129
+                        .tel
+                            span.type F:
+                            a(href="tel:18013774116") 1-801-377-4116
+        .sunset__partners
+            h3 Partners:
+            ul
+                li: a(href="http://www.vivint.com") VIVINT SMART HOME
+    .sunset__legal
+        .sunset__copyright
+            p Copyright © 2016 Vivint Solar Developer, LLC. All rights reserved. Vivint Solar Developer, LLC (EIN: 8O‐O756438) is a licensed contractor in each state in which we operate. For information about our contractor licenses, please visit
+                a(href="http://www.vivintsolar.com/en/licenses") vivintsolar.com/licenses
+                |.
+        .sunset__corp-links
+            a(href="http://www.vivintsolar.com/en/terms-of-use") Terms of Use
+            a(href="http://www.vivintsolar.com/en/privacy-policy") Privacy Policy
+            a(href="http://www.vivintsolar.com/en/solar-insurance") Insurance
+
+script(type="application/ld+json").
+    {
+        "@context": "http://schema.org",
+        "@id": "http://www.vivintsolar.com/#organization",
+        "@type": "Organization",
+        "name": "Vivint Solar",
+        "url": "http://www.vivintsolar.com/",
+        "logo": "https://lh6.googleusercontent.com/-hFQ5ikujCyE/AAAAAAAAAAI/AAAAAAAAAvQ/Uy4SDlztR8g/s0-c-k-no-ns/photo.jpg",
+        "address": {
+            "@id": "Corporate Office",
+            "@type": "PostalAddress",
+            "addressCountry": "USA",
+            "addressLocality": "Lehi",
+            "addressRegion": "UT",
+            "contactType": "Mailing address",
+            "postalCode": "84043",
+            "streetAddress": "1800 Ashton Blvd"
+        }
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+1-855-230-6892",
+            "contactType": "sales",
+            "areaServed": ["US"]
+        }],
+        "sameAs": [
+            "https://www.wikidata.org/wiki/Q7937913",
+            "https://www.linkedin.com/company/vivintsolar",
+            "https://www.youtube.com/user/VivintSolar",
+            "https://www.facebook.com/VivintSolar",
+            "https://twitter.com/VivintSolar",
+            "https://plus.google.com/+VivintSolar"
+        ],
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa 06:00:00MST-23:00:00MST",
+    }

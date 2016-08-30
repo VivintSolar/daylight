@@ -10,6 +10,10 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var fileinclude = require('gulp-file-include');
+var jade = require('gulp-jade');
+var data = require('gulp-data');
+var path = require('path');
+
 
 var htmlinput = ['./index.html','./components/**/*.html'];
 var htmloutput = './public';
@@ -22,6 +26,8 @@ var sassOptions = {
 };
 var jsinput = ['./js/**/*.js','./components/**/*.js'];
 var jsoutput = './public/js';
+var jadeinput = ['./components/**/*.jade'];
+var jadeoutput = './public/jade';
 
 gulp.task('watch:sass', function () {
     gulp.watch(sassinput, ['sass']);
@@ -33,6 +39,10 @@ gulp.task('watch:html', function () {
 
 gulp.task('watch:js', function () {
     gulp.watch(jsinput, ['js']).on('change', browserSync.reload);
+});
+
+gulp.task('watch:jade', function () {
+    gulp.watch([jadeinput,'./components/**/*.json'], ['jade','html']).on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {
@@ -66,6 +76,23 @@ gulp.task('js', function() {
   .pipe(gulp.dest(jsoutput));
 });
 
+gulp.task('jade', function() {
+  var YOUR_LOCALS = {
+      "name":"the name"
+  };
+ 
+  gulp.src(jadeinput)
+    .pipe(data(function(file) {
+        // console.log(file.path);
+        // console.log(file.path);
+        // console.log(file.path.replace('jade','json'));
+        // console.log(require(file.path.replace('jade','json'));
+      return require(file.path.replace('jade','json'));
+    }))
+    .pipe(jade({pretty:true}))
+    .pipe(gulp.dest(jadeoutput));
+});
+
 // Static server
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -81,6 +108,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('watch', ['watch:sass', 'watch:html', 'watch:js']);
+gulp.task('watch', ['watch:sass', 'watch:html', 'watch:js', 'watch:jade']);
 
 gulp.task('default', ['sass', 'watch', 'browser-sync']);

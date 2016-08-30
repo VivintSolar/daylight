@@ -1,0 +1,48 @@
+{
+    "menus":[
+        {
+            "menu":[
+                {
+                    "link":"http://www.vivintsolar.com/company#about",
+                    "text":"About Us"
+                },
+                {
+                    "link":"http://www.vivintsolar.com/customer-stories",
+                    "text":"Customer Stories"
+                },
+                {
+                    "link":"http://www.vivintsolar.com/company#newsroom",
+                    "text":"Newsroom"
+                },
+                {
+                    "link":"http://investors.vivintsolar.com/",
+                    "text":"Investors"
+                }
+            ]
+        },
+        {
+            "menu":[
+                {
+                    "link":"http://www.vivintsolar.com/contact-us",
+                    "text":"Contact Us"
+                },
+                {
+                    "link":"http://www.vivintsolar.com/careers",
+                    "text":"Careers"
+                }
+            ]
+        },
+        {
+            "menu":[
+                {
+                    "link":"http://www.vivintsolar.com/company#coverage",
+                    "text":"Service Areas"
+                },
+                {
+                    "link":"http://www.vivintsolar.com/company#leadership",
+                    "text":"Leadership"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "menu":[
+        {
+            "link":"http://www.vivintsolar.com/how-it-works",
+            "text":"How It Works2"
+        },
+        {
+            "link":"http://www.vivintsolar.com/go-solar",
+            "text":"Go Solar"
+        },
+        {
+            "link":"http://www.vivintsolar.com/customer-stories",
+            "text":"Customer Stories"
+        },
+        {
+            "link":"http://www.vivintsolar.com/company",
+            "text":"Company"
+        },
+        {
+            "link":"http://investors.vivintsolar.com/",
+            "text":"Investor Relations"
+        },
+        {
+            "link":"http://www.vivintsolar.com/company#coverage",
+            "text":"Check Availability"
+        }
+    ],
+    "phoneShort":"18884665531",
+    "phoneLong":"1‑888‑466‑5531"
+}
