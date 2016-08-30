@@ -3,27 +3,37 @@ footer.sunset
     .sunset__details
         .sunset__contact
             h3 Contact:
+            dl
+                dt INFO/ORDER:
+                dd
+                    a(href="tel:18552306892") 1-855-230-6892
+                dt SUPPORT/&#8203;BILLING:
+                dd
+                    a(href="tel:18774044129") 1-877-404-4129
         .sunset__company
             h3 Company:
-                .sunset__company-links.lumen-layout
+            .sunset__company-links.layout
                 each menu in menus
-                    ul.lumen-layout__item
+                    ul.layout__item
                         each item, key in menu.menu
                             li
                                 a(href="#{item.link}") #{item.text}
-                .sunset__offices
-                    .sunset__address
-                        h4.type MAIN OFFICE
-                        .street-address 1800 Ashton Blvd
-                        span.locality  Lehi
-                        span.region(title="Utah") UT
-                        span.postal-code 84043
-                        .tel
-                            span.type T:
-                            a(href="tel:18774044129") 1-877-404-4129
-                        .tel
-                            span.type F:
-                            a(href="tel:18013774116") 1-801-377-4116
+            .sunset__offices.layout
+                .sunset__address.layout__item
+                    h4.type MAIN OFFICE
+                    .street-address 1800 Ashton Blvd
+                    span.locality  Lehi
+                    span.region(title="Utah") UT
+                    span.postal-code 84043
+                    .tel
+                        span.type T:
+                        a(href="tel:18774044129") 1-877-404-4129
+                    .tel
+                        span.type F:
+                        a(href="tel:18013774116") 1-801-377-4116
+                .sunset__regional.layout__item
+                    h4 Regional Locations
+                    a(href="http://www.vivintsolar.com/contact-us") View All Locations
         .sunset__partners
             h3 Partners:
             ul
@@ -72,3 +82,4 @@ script(type="application/ld+json").
         ],
         "openingHours": "Mo,Tu,We,Th,Fr,Sa 06:00:00MST-23:00:00MST",
     }
+script(src="#{jsURL}")
