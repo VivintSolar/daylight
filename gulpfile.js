@@ -27,7 +27,7 @@ var sassOptions = {
 var jsinput = ['./js/**/*.js','./components/**/*.js'];
 var jsoutput = './public/js';
 var jadeinput = ['./components/**/*.jade'];
-var jadeoutput = './public/jade';
+var jadeoutput = './public/';
 
 gulp.task('watch:sass', function () {
     gulp.watch(sassinput, ['sass']);
