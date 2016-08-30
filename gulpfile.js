@@ -77,16 +77,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('jade', function() {
-  var YOUR_LOCALS = {
-      "name":"the name"
-  };
- 
   gulp.src(jadeinput)
     .pipe(data(function(file) {
-        // console.log(file.path);
-        // console.log(file.path);
-        // console.log(file.path.replace('jade','json'));
-        // console.log(require(file.path.replace('jade','json'));
       return require(file.path.replace('jade','json'));
     }))
     .pipe(jade({pretty:true}))
