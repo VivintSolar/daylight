@@ -60,7 +60,7 @@ gulp.task('sass', function () {
 
 gulp.task('html', function () {
   return gulp
-    .src(['./index.html','./components/sunrise/sunrise.html','./components/sunset/sunset.html'])
+    .src(['./index.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
