@@ -2,7 +2,6 @@ $includeBase: false;
 @import '../node_modules/lumen-sass/lumen-sass';
 @import '../node_modules/lumen-layout/lumen-layout';
 
-/*@include lumen-content();*/
 .sunrise, .sunset, .sunrise-menu {
     font-family: $font__family--sans;
     color: $color__gray--700;
@@ -21,13 +20,16 @@ $includeBase: false;
         }
     }
     a {
-        text-decoration: none;
-        &[href^=tel] {
+        &, &:visited, &:active {
+            color: $color__gray--700;
             text-decoration: none;
-            cursor: default;
-            color: inherit;
-            &:hover {
-                color: inherit !important;
+            &[href^=tel] {
+                text-decoration: none;
+                cursor: default;
+                color: inherit;
+                &:hover {
+                    color: inherit !important;
+                }
             }
         }
     }
@@ -36,21 +38,16 @@ $includeBase: false;
     @include lumen-content-width();
 }
 html {
-      font-family: $font__family--sans; /* 1 */
-      -ms-text-size-adjust: 100%; /* 2 */
-      -webkit-text-size-adjust: 100%; /* 2 */
+      font-family: $font__family--sans;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
       font-size:62.5%;
     }
-
-/**
- * Remove default margin.
- */
 
 body {
   margin: 0;
   font-size: $font__size--500;
   line-height: $font__line-height--500;
-  /*color: $color__gray--700;*/
   text-rendering: optimizeLegibility;
 }
 

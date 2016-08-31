@@ -1,7 +1,6 @@
 .sunset {
     font-size: $font__size--300;
     margin-bottom: $spacing--500;
-    /*@extend .content;*/
     h3 {
         font-size: $font__size--500;
         border-bottom: 1px solid #5C5C60;
@@ -50,7 +49,6 @@
     &__logo {
         background: transparent url(https://home.vivintsolar.com/img/vivint.solar.logo.svg) 0 0 no-repeat;
         background-size: contain;
-        /*height: $spacing--300;*/
         width: 175px;
         text-indent: -100%;
     }
