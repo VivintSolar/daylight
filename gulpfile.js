@@ -21,8 +21,8 @@ var sassinput = ['./sass/**/*.scss','./components/**/*.scss'];
 var sassoutput = './public/css';
 var sassOptions = {
   errLogToConsole: true,
-  outputStyle: 'expanded',
-  // outputStyle: 'compressed'
+  // outputStyle: 'expanded',
+  outputStyle: 'compact'
 };
 var jsinput = ['./js/**/*.js','./components/**/*.js'];
 var jsoutput = './public/js';
