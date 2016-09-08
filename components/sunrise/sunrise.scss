@@ -1,6 +1,31 @@
 $sunriseHeight: 60px;
 .sunrise {
-    background: $color__white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font__size--400;
+    &__logo {
+        margin-right: 16px;
+        display:inline-block;
+        img {
+            width: 175px;
+            padding: $spacing--300;
+        }
+    }
+    &__menu {
+        li {
+            display:inline-block;
+            margin-left: $spacing--400;
+        }
+    }
+    &__availability[class][class] {
+        color: $color__green;
+    }
+    
+    
+    
+    /*background: $color__white;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,26 +45,7 @@ $sunriseHeight: 60px;
     &-placeholder {
         height: $sunriseHeight;
     }
-    &__phone {
-        max-width: 200px;
-        margin: 0;
-        padding: 7px 10px;
-        border: none;
-        color: #fff;
-        background-color: $color__orange;
-        font-size: 12px;
-        display: inline-block;
-        a[href^=tel] {
-            color: #fff;
-        }
-    }
-    &__logo {
-        margin-right: 16px;
-        display:inline-block;
-        img {
-            width: 175px;
-        }
-    }
+
     &__menu--trigger {
         .sunrise--menu-top & {
             display:none;
@@ -83,7 +89,6 @@ $sunriseHeight: 60px;
             overflow:hidden;
             text-indent:100%;
             .sunrise--menu-top & {
-                display:none;
             }
         }
         
@@ -93,59 +98,12 @@ $sunriseHeight: 60px;
             padding: 0;
             line-height: 1.2;
             li {
-                a,
-                a:visited {
-                    padding: $spacing--100;
-                    display: block;
-                    color: #5C5C60;
-                }
-                a:focus,
-                a:hover {
-                    color: #57C1E8;
-                }
-            }
-        }
-        &.open {
-            margin-left: 0;
-        }
-        &__overlay {
-            visibility: hidden;
-            position: fixed;
-            opacity: 0;
-            transition: opacity 200ms ease-in-out;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background-color: rgba(92, 92, 96, 0.6);
-            z-index: 999;
-            &.open {
-                visibility: visible;
-                opacity: 1;
-                cursor: pointer;
-            }
-        }
-        .sunrise--menu-top & {
-            position: static;
-            max-width: 100%;
-            margin-left: auto;
-            padding: 0;
-            font-size: $font__size--400;
-            ul {
-                display: flex;
-                
-            }
-            li {
-                margin:0;
+                display:inline-block;
             }
             a {
-                padding: $spacing--100 $spacing--100;
-                font-weight: 200;
-            }
-            &__hide-large {
-                display:none;
+                
             }
         }
-    }
+    }*/
 }
 

@@ -1,18 +1,10 @@
 header.sunrise
     a.sunrise__logo(href='http://www.vivintsolar.com/')
         img(src='https://home.vivintsolar.com/img/vivint.solar.logo.svg',alt='Vivint Solar Logo')
-    .sunrise__menu
-        a.sunrise__menu--trigger(href='#menu') Menu
-        nav.sunrise-menu
-            a.sunrise-menu__close(href='#') Close
-            ul
-                each item in menu
-                    li
-                        a(href="#{item.link}") #{item.text}
-    #sunrise__cta
-        p.sunrise__phone
-            span.hide-mobile CALL&nbsp;NOW:&nbsp;
-            a(href="tel:#{phoneShort}")
-                | #{phoneLong}
-    .sunrise-menu__overlay
-.sunrise-placeholder
+    nav.sunrise__menu
+        //- a.sunrise-menu__close(href='#') Close
+        ul
+        each item in menu
+            li
+                a(href="#{item.link}" class="#{item.class}") #{item.text}
+//- .sunrise-placeholder

@@ -1,26 +1,20 @@
 .sunset {
+    background-color: $color__gray--500;
     font-size: $font__size--300;
     margin-bottom: $spacing--500;
+    padding-top: $spacing--500;
     h3 {
+        color: $color__gray--700;
         font-size: $font__size--500;
-        border-bottom: 1px solid #5C5C60;
-        padding-bottom: $spacing--50;
         margin-top: $spacing--200;
-        margin-bottom: $spacing--200;
+        margin-bottom: $spacing--100;
         font-weight: 500;
-    }
-    h4 {
-        color: $color__gray--600;
-        font-size: $font__size--300;
-        margin: 0;
-        line-height: $font__line-height--500;
-        font-weight: 100;
+        font-family: $font__family--serif;
     }
     a {
-      color: inherit;
-    }
-    a:focus, a:hover {
-      color: $color__blue;
+        &, &:visited, &:active {
+          color: $color__white;
+      }
     }
     ul {
         list-style: none;
@@ -35,70 +29,38 @@
             line-height: $font__line-height--500;
         }
     }
-    dl {
-        margin: 0;
-    }
-    dt {
-        margin-top: $spacing--200;
-        font-weight: 100;
-    }
-    dd {
-        margin-left: 0;
-    }
-
-    &__logo {
-        background: transparent url(https://home.vivintsolar.com/img/vivint.solar.logo.svg) 0 0 no-repeat;
-        background-size: contain;
-        width: 175px;
-        text-indent: -100%;
-    }
-    &__details {
+    &__menus {
         display:flex;
-        flex-wrap:wrap;
+        flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
+        margin: $spacing--400;
     }
-    &__contact {
-        @include lumen-layout-width(( 300:4, 400:4, 500:2, 600: 2, 700:2));
+    &__column {
+        margin-bottom: $spacing--400;
+        min-width:150px;
     }
-    &__company {
-        @include lumen-layout-width(( 300:4, 400:4, 500:8, 600: 8, 700:8));
-        .layout {
-            display:flex;
-            flex-wrap:wrap;
-            justify-content: space-between;
-            &__item,
-            &:before,
-            &:after {
-                @include lumen-layout-width(( 300:4, 400:4, 500:2, 600: 2, 700:2));
-            }
+    &__legal {
+        background-color: $color__gray--600;
+        color: $color__white;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-links {
+            flex:1 1 auto;
         }
     }
-    &__offices {
-        margin-top: 30px;
-        padding-top: 10px;
-        border-top: 1px solid $color__gray--700;
-    }
-    &__address,
-    &__regional {
-        @include lumen-layout-width(( 300:4, 400:4, 500:4, 600: 4, 700:4));
-    }
-    &__partners {
-        @include lumen-layout-width(( 300:4, 400:4, 500:2, 600: 2, 700:2));
-    }
-    
     &__copyright {
-        margin-top: $spacing--500;
+        /*margin-top: $spacing--500;*/
         font-size: $font__size--200;
-        color: $color__gray--600;
-        a {
-            color: $color__blue;
-            text-decoration: underline;
-        }
+        /*color: $color__gray--600;*/
+        flex:1 2 auto;
     }
-    &__corp-links a {
+    &__legal-links a {
         display: inline-block;
         margin-right: $spacing--300;
         color: $color__blue;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
     }
 }
