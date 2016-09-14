@@ -4,7 +4,10 @@ header.sunrise
     nav.sunrise__menu
         //- a.sunrise-menu__close(href='#') Close
         ul
-        each item in menu
-            li
-                a(href="#{item.link}" class="#{item.class}") #{item.text}
-//- .sunrise-placeholder
+            each item in menu
+                li
+                    if item.link
+                        a(href="#{item.link}" class=(item.class ? item.class : '')) #{item.text}
+                    else
+                        | #{item.text}
+.sunrise-placeholder
