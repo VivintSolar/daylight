@@ -1,6 +1,6 @@
 {
   "name": "@slr/daylight",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "The common header and footer for vivint solar.",
   "keywords": [
     "header",
