@@ -1,6 +1,6 @@
 $includeBase: false;
-@import '../node_modules/lumen-sass/lumen-sass';
-@import '../node_modules/lumen-layout/lumen-layout';
+@import '../node_modules/@slr/lumen-sass/lumen-sass';
+@import '../node_modules/@slr/lumen-layout/lumen-layout';
 
 .sunrise, .sunset, .sunrise-menu {
     font-family: $font__family--sans;
