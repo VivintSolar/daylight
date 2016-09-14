@@ -1,25 +1,26 @@
 {
-    "menu":[
-        {
-            "link":"http://www.vivintsolar.com/company#coverage",
-            "text":"Check Availability",
-            "class":"sunrise__availability"
-        },
-        {
-            "link":"http://www.vivintsolar.com/how-it-works",
-            "text":"How Solar Works"
-        },
-        {
-            "link":"http://www.vivintsolar.com/customer-stories",
-            "text":"About Us"
-        },
-        {
-            "link":"#d",
-            "text":"Login",
-            "class":"sunrise__login"
+    "menu": [{
+            "link": "http://www.vivintsolar.com/company#coverage",
+            "text": "Check Availability",
+            "class": "sunrise__availability"
+        }, {
+            "link": "http://www.vivintsolar.com/how-it-works",
+            "text": "How Solar Works"
+        }, {
+            "link": "http://www.vivintsolar.com/customer-stories",
+            "text": "Go Solar"
+        }, {
+            "link": "http://www.vivintsolar.com/customer-stories",
+            "text": "Log in"
+        }, {
+            "link": "#d",
+            "text": "Sign Up"
+        }, {
+            "link": "tel:18774044129",
+            "text": "1-877-404-4129"
         }
 
     ],
-    "phoneShort":"18884665531",
-    "phoneLong":"1‑888‑466‑5531"
+    "phoneShort": "18884665531",
+    "phoneLong": "1‑888‑466‑5531"
 }
