@@ -35,7 +35,25 @@ $includeBase: false;
     }
 }
 .sunrise, .sunset {
-    @include lumen-content-width();
+    width: 100%;
+}
+.sunrise, .sunset__menus, .sunset__legal {
+    @include lumen-respond('padding-left',( 
+        100:lumen-gutter(200,false),  
+        300:lumen-gutter(300,false), 
+        400:lumen-gutter(400,false), 
+        500:lumen-gutter(500,false), 
+        600:lumen-gutter(600,false), 
+        700:lumen-gutter(700,false)
+    ));
+    @include lumen-respond('padding-right',( 
+        100:lumen-gutter(200,false),  
+        300:lumen-gutter(300,false), 
+        400:lumen-gutter(400,false), 
+        500:lumen-gutter(500,false), 
+        600:lumen-gutter(600,false), 
+        700:lumen-gutter(700,false)
+    ));
 }
 html {
       font-family: $font__family--sans;

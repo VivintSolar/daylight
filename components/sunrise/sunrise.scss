@@ -6,6 +6,15 @@ $sunriseHeight: 60px;
     align-items: center;
     justify-content: space-between;
     font-size: $font__size--100;
+    width: 100%;
+    z-index: 10;
+    background-color: $color__white;
+    @media (min-width: $breakpoint--700) {
+        width: lumen-columns(12, 700);
+        @include lumen-respond-cols('margin-left', (  700:2),true);
+        padding-right:0;
+        padding-left:0;
+    }
     &__logo {
         margin-right: 16px;
         display:inline-block;

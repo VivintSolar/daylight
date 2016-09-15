@@ -1,11 +1,15 @@
 .sunset {
+    width: 100%;
     &__wrapper {
-        
-        background-color: $color__gray--500;
         font-size: $font__size--300;
-        /*margin-bottom: $spacing--500;*/
         padding-top: $spacing--500;
-        @include lumen-fullbleed-background('wide');
+        &[class]{
+            width: 100%;
+            @media (min-width: $breakpoint--700) {
+                width: lumen-columns(12, 700);
+                margin: 0 auto;
+            }
+        }
     }
     h3 {
         color: $color__gray--700;
@@ -34,18 +38,17 @@
         }
     }
     &__menus {
+        background-color: $color__gray--500;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: $spacing--400;
     }
     &__column {
         margin-bottom: $spacing--400;
         min-width:150px;
     }
     &__legal {
-        @include lumen-fullbleed-background('wide');
         background-color: $color__gray--600;
         color: $color__white;
         display:flex;
@@ -66,14 +69,11 @@
                 display: inline-block;
                 margin-right: $spacing--300;
                 color: $color__blue;
-                /*text-decoration: underline;*/
             }
         }
     }
     &__copyright {
-        /*margin-top: $spacing--500;*/
         font-size: $font__size--100;
-        /*color: $color__gray--600;*/
         width: 100%;
         @media (min-width: $breakpoint--500) {
             width:50%;
