@@ -58,9 +58,9 @@ body { margin: 0; font-size: 1.8rem; line-height: 1.4; text-rendering: optimizeL
 
 @media (min-width: 1500px) and (min-width: 1500px) { .sunrise { margin-left: 13.3vw; } }
 
-@media (max-width: 900px) { .sunrise__menu ul li:first-child { color: red !important; }
-  .sunrise__menu ul li:first-child ~ li { display: none; }
-  .sunrise__menu--trigger { display: inherit !important; } }
+@media (max-width: 900px) { .sunrise__menu ul li:first-child ~ li { display: none; }
+  .sunrise__menu--trigger { display: inline !important; }
+  .sunrise__menu--icon { width: 15px; display: inline; position: relative; bottom: -3px; margin-right: 5px; } }
 
 .sunrise__logo { margin-right: 16px; display: inline-block; }
 

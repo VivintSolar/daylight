@@ -18,13 +18,20 @@ $sunriseHeight: 60px;
     @media (max-width: $breakpoint--500) {
         &__menu {
             ul li:first-child{
-                color: red !important;
+
                 ~li{
                     display: none;
                 }
             }
             &--trigger{
-                display: inherit !important;
+                display: inline !important;
+            }
+            &--icon{
+                width: 15px;
+                display: inline;
+                position: relative;
+                bottom: -3px;
+                margin-right: 5px;
             }
         }
     }
