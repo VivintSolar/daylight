@@ -1,16 +1,16 @@
 {
     "menu": [{
-            "link": "http://www.vivintsolar.com/company#coverage",
+            "link": "/company#coverage",
             "text": "Check Availability",
             "class": "sunrise__availability"
         }, {
-            "link": "http://www.vivintsolar.com/how-it-works",
+            "link": "/how-it-works",
             "text": "How Solar Works"
         }, {
-            "link": "http://www.vivintsolar.com/customer-stories",
+            "link": "/customer-stories",
             "text": "Go Solar"
         }, {
-            "link": "http://www.vivintsolar.com/customer-stories",
+            "link": "/customer-stories",
             "text": "Log in"
         }, {
             "link": "#d",

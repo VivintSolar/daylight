@@ -1,13 +1,23 @@
 header.sunrise
-    a.sunrise__logo(href='http://www.vivintsolar.com/')
+
+    a.sunrise__logo(href='/')
         img(src='https://home.vivintsolar.com/img/vivint.solar.logo.svg',alt='Vivint Solar Logo')
     nav.sunrise__menu
-        //- a.sunrise-menu__close(href='#') Close
+        
+        .sunrise__menu__overlay
         ul
+            li
+                a.sunrise__menu--trigger(href='#menu') Menu
             each item in menu
                 li
                     if item.link
                         a(href="#{item.link}" class=(item.class ? item.class : '')) #{item.text}
                     else
                         | #{item.text}
+    .sunrise-menu
+        a.sunrise-menu__close(href='#') Close
+        ul
+            each item in menu
+                li
+                    a(href="#{item.link}" class="#{item.class}") #{item.text}
 .sunrise-placeholder
