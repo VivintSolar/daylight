@@ -84,9 +84,11 @@ body { margin: 0; font-size: 1.8rem; line-height: 1.4; text-rendering: optimizeL
 
 .sunrise__login { background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMiIgYmFzZVByb2ZpbGU9InRpbnkiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0yNTEuOCwyMjQuNGMtNDEuNCwwLTc1LjItMzMuNy03NS4yLTc1LjJTMjEwLjQsNzQsMjUxLjgsNzRzNzUuMiwzMy43LDc1LjIsNzUuMlMyOTMuMywyMjQuNCwyNTEuOCwyMjQuNHogTTI1MS44LDg5LjhjLTMyLjcsMC01OS40LDI2LjYtNTkuNCw1OS40YzAsMzIuNywyNi42LDU5LjQsNTkuNCw1OS40czU5LjQtMjYuNiw1OS40LTU5LjRDMzExLjIsMTE2LjUsMjg0LjYsODkuOCwyNTEuOCw4OS44eiIvPjxwYXRoIGQ9Ik02My43LDQxMy4zbC04LjktMTEuN0MyMS4xLDM1Ny41LDMuMywzMDUuMSwzLjMsMjUwYzAtMTM3LjksMTEyLjEtMjUwLDI1MC0yNTBjMTM3LjksMCwyNTAsMTEyLjEsMjUwLDI1MGMwLDU1LjEtMTcuOCwxMDcuNS01MS41LDE1MS42bC04LjksMTEuN2wtNC44LTEzLjlDNDEzLDMyNi44LDMzOC44LDI3OCwyNTMuMywyNzhjLTg1LjQsMC0xNTkuNyw0OC43LTE4NC44LDEyMS4zTDYzLjcsNDEzLjN6IE0yNTMuMywyNjIuM2M4Ni43LDAsMTYyLjgsNDYuOSwxOTQuMywxMTguMWMyNi4yLTM4LjgsMzkuOS04My41LDM5LjktMTMwLjRjMC0xMjkuMS0xMDUuMS0yMzQuMi0yMzQuMi0yMzQuMlMxOS4xLDEyMC45LDE5LjEsMjUwYzAsNDYuOSwxMy44LDkxLjYsMzkuOSwxMzAuNEM5MC41LDMwOS4yLDE2Ni42LDI2Mi4zLDI1My4zLDI2Mi4zeiIvPjxwYXRoIGQ9Ik0yNTMuMyw1MDBjLTc4LjMsMC0xNTAuNy0zNS45LTE5OC41LTk4LjRsLTIuNi0zLjRsMS40LTRjMjcuMy03OC45LDEwNy41LTEzMS45LDE5OS43LTEzMS45YzkyLjIsMCwxNzIuNCw1MywxOTkuNywxMzEuOWwxLjQsNGwtMi42LDMuNEM0MDQsNDY0LjEsMzMxLjcsNTAwLDI1My4zLDUwMHogTTcwLDM5NS40YzQ0LjgsNTYuNSwxMTEuNCw4OC45LDE4My4zLDg4LjljNzEuOSwwLDEzOC41LTMyLjMsMTgzLjMtODguOUM0MTAuMywzMjUsMzM3LjIsMjc4LDI1My4zLDI3OEMxNjkuNSwyNzgsOTYuNCwzMjUsNzAsMzk1LjR6Ii8+PC9nPjwvc3ZnPg==) no-repeat; height: 20px; width: 20px; overflow: hidden; display: inline-block; text-indent: 10em; }
 
-.sunrise-menu { position: fixed; left: 0; top: 0; height: 100%; width: 100%; max-width: 250px; background-color: #fff; padding: 20px; color: white; margin-left: -250px; transition: margin 200ms ease-in-out; z-index: 1000; font-size: 18px; }
+.sunrise-menu { position: fixed; right: 0; top: 0; height: 100%; width: 100%; max-width: 250px; background-color: #fff; padding: 20px; padding-top: 50px; color: white; margin-right: -250px; transition: margin 200ms ease-in-out; z-index: 1000; font-size: 18px; }
 
 .sunrise-menu *, .sunrise-menu *:before, .sunrise-menu *:after { box-sizing: border-box; }
+
+.sunrise-menu .sunrise__availability { padding-left: 40px !important; }
 
 .sunrise-menu, .sunrise-menu:before, .sunrise-menu:after { box-sizing: border-box; }
 
@@ -98,7 +100,7 @@ body { margin: 0; font-size: 1.8rem; line-height: 1.4; text-rendering: optimizeL
 
 .sunrise-menu ul li a:focus, .sunrise-menu ul li a:hover { color: #57C1E8; }
 
-.sunrise-menu.open { margin-left: 0; }
+.sunrise-menu.open { margin-right: 0; }
 
 .sunset { width: 100%; }
 
