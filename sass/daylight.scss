@@ -6,6 +6,9 @@ $includeBase: false;
     color: $color__gray--700;
     letter-spacing: .5px;
     font-weight: 200;
+    text-rendering: auto;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: inherit;
     &,
     &:before,
     &:after {
@@ -35,6 +38,9 @@ $includeBase: false;
 }
 .sunrise, .sunset {
     width: 100%;
+    p {
+        margin:0;
+    }
 }
 .sunrise, .sunset__menus, .sunset__legal {
     @include lumen-respond('padding-left',( 

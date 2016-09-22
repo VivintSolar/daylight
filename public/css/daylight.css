@@ -12,7 +12,7 @@ $color__sh-silver: ;*/
 @font-face { font-family: "IntCircularPro"; font-style: normal; font-weight: 700; src: url("https://s3-us-west-2.amazonaws.com/com.vivintsolar.sites/lumen/fonts/subsetted/lineto-circular-pro-bold.woff2") format("woff2"), url("https://s3-us-west-2.amazonaws.com/com.vivintsolar.sites/lumen/fonts/subsetted/lineto-circular-pro-bold.woff") format("woff"); }
 
 /*$box__shadow: 0 0 4px $color__black--translucent;*/
-.sunrise, .sunset, .sunrise-menu { font-family: IntCircularPro, Arial, sans-serif; color: #656569; letter-spacing: .5px; font-weight: 200; }
+.sunrise, .sunset, .sunrise-menu { font-family: IntCircularPro, Arial, sans-serif; color: #656569; letter-spacing: .5px; font-weight: 200; text-rendering: auto; -webkit-font-smoothing: auto; -moz-osx-font-smoothing: inherit; }
 
 .sunrise, .sunrise:before, .sunrise:after, .sunset, .sunset:before, .sunset:after, .sunrise-menu, .sunrise-menu:before, .sunrise-menu:after { box-sizing: border-box; }
 
@@ -25,6 +25,8 @@ $color__sh-silver: ;*/
 .sunrise a[href^=tel]:hover, .sunrise a:visited[href^=tel]:hover, .sunrise a:active[href^=tel]:hover, .sunset a[href^=tel]:hover, .sunset a:visited[href^=tel]:hover, .sunset a:active[href^=tel]:hover, .sunrise-menu a[href^=tel]:hover, .sunrise-menu a:visited[href^=tel]:hover, .sunrise-menu a:active[href^=tel]:hover { color: inherit !important; }
 
 .sunrise, .sunset { width: 100%; }
+
+.sunrise p, .sunset p { margin: 0; }
 
 .sunrise, .sunset__menus, .sunset__legal { padding-left: 5.6vw; padding-right: 5.6vw; }
 
@@ -120,9 +122,17 @@ body { margin: 0; font-size: 1.8rem; line-height: 1.4; text-rendering: optimizeL
 
 @media (min-width: 900px) { .sunset li { line-height: 1.4; } }
 
-.sunset__menus { background-color: #DBD9D9; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.sunset p { margin-bottom: 0; }
 
-.sunset__column { margin-bottom: 24px; min-width: 150px; }
+.sunset__menus { background-color: #DBD9D9; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 36px; }
+
+.sunset__menus:before, .sunset__menus:after { content: ''; margin-bottom: 24px; min-width: 150px; -ms-flex-order: 100; order: 100; width: 30%; }
+
+@media (min-width: 900px) { .sunset__menus:before, .sunset__menus:after { width: 15%; } }
+
+.sunset__column { margin-bottom: 24px; min-width: 150px; width: 30%; }
+
+@media (min-width: 900px) { .sunset__column { width: 15%; } }
 
 .sunset__legal { background-color: #959497; color: #fff; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px; }
 
@@ -130,6 +140,6 @@ body { margin: 0; font-size: 1.8rem; line-height: 1.4; text-rendering: optimizeL
 
 .sunset__legal-links a { font-size: 1.2rem; display: inline-block; margin-right: 16px; color: #57C1E8; }
 
-.sunset__copyright { font-size: 1rem; width: 100%; }
+.sunset__copyright { font-size: 1rem; width: 100%; margin-top: 16px; }
 
-@media (min-width: 900px) { .sunset__copyright { width: 50%; min-width: 500px; } }
+@media (min-width: 900px) { .sunset__copyright { width: 50%; min-width: 500px; margin-top: 0; } }
