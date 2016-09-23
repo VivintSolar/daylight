@@ -34,6 +34,8 @@
     "gulp-jade": "1.1.x",
     "gulp-data": "1.2.x",
     "gulp-path": "3.0.x",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-clean-css": "^2.0.12",
     "@slr/lumen-sass": "0.1.x",
     "@slr/lumen-layout": "0.0.x"
   },

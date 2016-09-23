@@ -13,6 +13,8 @@ var fileinclude = require('gulp-file-include');
 var jade = require('gulp-jade');
 var data = require('gulp-data');
 var path = require('path');
+var combineMq = require('gulp-combine-mq');
+var cleanCSS = require('gulp-clean-css');
 
 
 var htmlinput = ['./index.html','./components/**/*.html'];
@@ -54,6 +56,10 @@ gulp.task('sass', function () {
         browsers: ['last 2 versions'],
         cascade: false
     }))
+    .pipe(combineMq({
+        beautify: false
+    }))
+    .pipe(cleanCSS())
     .pipe(gulp.dest(sassoutput))
     .pipe(browserSync.stream());
 });
