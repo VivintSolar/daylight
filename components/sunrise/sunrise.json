@@ -1,20 +1,17 @@
 {
     "menu": [{
-            "link": "/company#coverage",
+            "link": "/get-a-quote",
             "text": "Check Availability",
             "class": "sunrise__availability"
         }, {
-            "link": "/how-it-works",
-            "text": "How Solar Works"
+            "link": "/solar-made-simple",
+            "text": "Solar Made Simple"
         }, {
-            "link": "/customer-stories",
-            "text": "Go Solar"
+            "link": "/about-us",
+            "text": "About Us"
         }, {
-            "link": "/customer-stories",
-            "text": "Log in"
-        }, {
-            "link": "#d",
-            "text": "Sign Up"
+            "link": "https://account.vivintsolar.com/login",
+            "text": "Log In"
         }, {
             "link": "tel:18774044129",
             "text": "1-877-404-4129"

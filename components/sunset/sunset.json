@@ -4,16 +4,12 @@
             "title": "Better Power",
             "menu":[
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"/how-solar-works",
                     "text":"How Solar Works"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"/solar-made-simple",
                     "text":"Solar Process"
-                },
-                {
-                    "link":"http://www.vivintsolar.com/",
-                    "text":"Solar Products"
                 }
             ]
         },
@@ -21,15 +17,11 @@
             "title": "Community",
             "menu":[
                 {
-                    "link":"http://www.vivintsolar.com/customer-stories",
-                    "text":"Customer Stories"
+                    "link":"/customer-reviews",
+                    "text":"Customer Reviews"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/customer-stories",
-                    "text":"Support"
-                },
-                {
-                    "link":"http://www.vivintsolar.com/customer-stories",
+                    "link":"/coverage",
                     "text":"Coverage"
                 }
             ]
@@ -38,16 +30,8 @@
             "title": "Get Started",
             "menu":[
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"/get-a-quote",
                     "text":"Get Your Free Quote"
-                },
-                {
-                    "link":"http://www.vivintsolar.com/",
-                    "text":"Solar Savings Calculator"
-                },
-                {
-                    "link":"http://www.vivintsolar.com/",
-                    "text":"Contact Us"
                 }
             ]
         },
@@ -55,20 +39,16 @@
             "title": "Company",
             "menu":[
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"/about-us",
                     "text":"About Us"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"/leadership",
                     "text":"Leadership"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"/careers",
                     "text":"Careers"
-                },
-                {
-                    "link":"http://www.vivintsolar.com/",
-                    "text":"Why Vivint Solar"
                 }
             ]
         },
@@ -80,7 +60,7 @@
                     "text":"Vivint Smart Home"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"http://investors.vivintsolar.com/company/investors/Press-Releases/default.aspx",
                     "text":"Press"
                 },
                 {
@@ -93,19 +73,19 @@
             "title": "Connect",
             "menu":[
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"https://www.facebook.com/VivintSolar",
                     "text":"Facebook"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"https://twitter.com/VivintSolar",
                     "text":"Twitter"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"http://www.instagram.com/vivintsolar",
                     "text":"Instagram"
                 },
                 {
-                    "link":"http://www.vivintsolar.com/",
+                    "link":"https://www.youtube.com/vivintsolar",
                     "text":"YouTube"
                 }
             ]
