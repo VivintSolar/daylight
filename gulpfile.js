@@ -15,6 +15,7 @@ var data = require('gulp-data');
 var path = require('path');
 var combineMq = require('gulp-combine-mq');
 var cleanCSS = require('gulp-clean-css');
+var fs = require('fs');
 
 
 var htmlinput = ['./index.html','./components/**/*.html'];
@@ -28,7 +29,7 @@ var sassOptions = {
 };
 var jsinput = ['./js/**/*.js','./components/**/*.js'];
 var jsoutput = './public/js';
-var jadeinput = ['./components/**/*.jade'];
+var jadeinput = ['./components/**/*.jade','./daylight/daylight.jade'];
 var jadeoutput = './public/';
 
 gulp.task('watch:sass', function () {
@@ -88,6 +89,38 @@ gulp.task('jade', function() {
       return require(file.path.replace('jade','json'));
     }))
     .pipe(jade({pretty:true}))
+    .pipe(gulp.dest(jadeoutput));
+});
+
+gulp.task('makeJSON',function() {
+  gulp.src('./daylight/daylight.jade')
+    .pipe(data(function(){
+      var theJSON = {};
+      function prepareForJSON(contents){
+        var parsed = contents.replace(/\n/g,"");
+        parsed = parsed.replace(/"/g,'\\"');
+        parsed = parsed.replace(/\>\s+\<"/g,'><');
+        return parsed;
+      }
+      var dawn = fs.readFileSync("./public/dawn/dawn.html", 'utf8');
+      theJSON.dawn = prepareForJSON(dawn);
+      
+      var sunrise = fs.readFileSync("./public/sunrise/sunrise.html", 'utf8');
+      theJSON.sunrise = prepareForJSON(sunrise);
+      
+      var sunset = fs.readFileSync("./public/sunset/sunset.html", 'utf8');
+      theJSON.sunset = prepareForJSON(sunset);
+      
+      // console.log("raw",dawn);
+      // console.log("parsed", prepareForJSON(dawn));
+      // console.log(theJSON);
+      // console.log("toJSON",JSON.stringify(theJSON));
+      
+      return theJSON;
+      // return dawn
+    }))
+    .pipe(jade({pretty:true}))
+    .pipe(rename('daylight.js'))
     .pipe(gulp.dest(jadeoutput));
 });
 
