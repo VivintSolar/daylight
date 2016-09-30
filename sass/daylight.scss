@@ -29,8 +29,10 @@ $includeBase: false;
                 text-decoration: none;
                 cursor: default;
                 color: inherit;
+                white-space:nowrap;
                 &:hover {
                     color: inherit !important;
+                    border-bottom: 0;
                 }
             }
         }
