@@ -98,6 +98,7 @@ gulp.task('makeJSON',function() {
       var theJSON = {};
       function prepareForJSON(contents){
         var parsed = contents.replace(/\n/g,"");
+        parsed = parsed.replace(/href\=\"\//g,'href="https://www.vivintsolar.com/');
         parsed = parsed.replace(/"/g,'\\"');
         parsed = parsed.replace(/\>\s+\<"/g,'><');
         return parsed;
