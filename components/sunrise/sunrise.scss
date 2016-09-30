@@ -43,9 +43,25 @@ $sunriseHeight: 60px;
       @media (min-width: $breakpoint--700) {
           width: lumen-columns(12, 700);
           @include lumen-respond-cols('margin-left', (  700:2),true);
-          padding-right:0;
-          padding-left:0;
       }
+      @include lumen-respond('padding-left',(
+        100:$grid__gutter-width--100/2,
+        200:$grid__gutter-width--200/2,
+        300:$grid__gutter-width--300/2,
+        400:$grid__gutter-width--400/2,
+        500:$grid__gutter-width--500/2,
+        600:$grid__gutter-width--600/2,
+        700:0
+      ));
+      @include lumen-respond('padding-right',(
+        100:$grid__gutter-width--100/2,
+        200:$grid__gutter-width--200/2,
+        300:$grid__gutter-width--300/2,
+        400:$grid__gutter-width--400/2,
+        500:$grid__gutter-width--500/2,
+        600:$grid__gutter-width--600/2,
+        700:0
+      ));
     }
     &__logo {
         margin-right: 16px;
