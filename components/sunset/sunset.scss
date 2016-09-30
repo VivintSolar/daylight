@@ -2,7 +2,7 @@
     width: 100%;
     &__wrapper {
         font-size: $font__size--300;
-        padding-top: $spacing--500;
+        /*padding-top: $spacing--500;*/
         &[class]{
             width: 100%;
             @media (min-width: $breakpoint--700) {

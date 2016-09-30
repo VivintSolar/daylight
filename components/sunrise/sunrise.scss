@@ -5,7 +5,7 @@ $sunriseHeight: 60px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: $font__size--100;
+    font-size: $font__size--200;
     width: 100%;
     z-index: 10;
     background-color: $color__white;
@@ -15,7 +15,7 @@ $sunriseHeight: 60px;
         padding-right:0;
         padding-left:0;
     }
-    @media (max-width: $breakpoint--500) {
+    @media (max-width: $breakpoint--400) {
         &__menu {
             ul li:first-child{
 
@@ -45,7 +45,7 @@ $sunriseHeight: 60px;
             width: 175px;
             max-width: 100%;
             min-width: 140px;
-            padding: $spacing--300;
+            padding: $spacing--300 $spacing--300 $spacing--300 0;
         }
     }
     &__menu {
