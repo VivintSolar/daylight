@@ -1,19 +1,14 @@
 $sunriseHeight: 60px;
 .sunrise {
-    position: fixed;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-size: $font__size--200;
+    font-size: $font__size--300;
     width: 100%;
     z-index: 10;
     background-color: $color__white;
-    @media (min-width: $breakpoint--700) {
-        width: lumen-columns(12, 700);
-        @include lumen-respond-cols('margin-left', (  700:2),true);
-        padding-right:0;
-        padding-left:0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    position: fixed;
+    height: $sunriseHeight;
+    &[class]{
+      padding: 0;
     }
     @media (max-width: $breakpoint--400) {
         &__menu {
@@ -37,6 +32,20 @@ $sunriseHeight: 60px;
                 margin-right: 5px;
             }
         }
+    }
+    &__wrapper {
+      width: 100%;
+      
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @media (min-width: $breakpoint--700) {
+          width: lumen-columns(12, 700);
+          @include lumen-respond-cols('margin-left', (  700:2),true);
+          padding-right:0;
+          padding-left:0;
+      }
     }
     &__logo {
         margin-right: 16px;
