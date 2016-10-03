@@ -22,7 +22,7 @@
                 },
                 {
                     "link":"/coverage",
-                    "text":"Coverage"
+                    "text":"Coverage Areas"
                 }
             ]
         },
@@ -49,7 +49,11 @@
                 {
                     "link":"/careers",
                     "text":"Careers"
-                }
+                },
+								{
+									"link":"http://investors.vivintsolar.com/company/investors/Press-Releases/default.aspx",
+									"text":"Newsroom"
+								}
             ]
         },
         {
@@ -58,10 +62,6 @@
                 {
                     "link":"http://www.vivint.com/",
                     "text":"Vivint Smart Home"
-                },
-                {
-                    "link":"http://investors.vivintsolar.com/company/investors/Press-Releases/default.aspx",
-                    "text":"Press"
                 },
                 {
                     "link":"http://investors.vivintsolar.com/",
