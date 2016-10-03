@@ -1,95 +1,95 @@
 {
-    "menus":[
-        {
-            "title": "Better Power",
-            "menu":[
-                {
-                    "link":"/how-solar-works",
-                    "text":"How Solar Works"
-                },
-                {
-                    "link":"/solar-made-simple",
-                    "text":"Solar Process"
-                }
-            ]
-        },
-        {
-            "title": "Community",
-            "menu":[
-                {
-                    "link":"/customer-reviews",
-                    "text":"Customer Reviews"
-                },
-                {
-                    "link":"/coverage",
-                    "text":"Coverage"
-                }
-            ]
-        },
-        {
-            "title": "Get Started",
-            "menu":[
-                {
-                    "link":"/get-a-quote",
-                    "text":"Get Your Free Quote"
-                }
-            ]
-        },
-        {
-            "title": "Company",
-            "menu":[
-                {
-                    "link":"/about-us",
-                    "text":"About Us"
-                },
-                {
-                    "link":"/leadership",
-                    "text":"Leadership"
-                },
-                {
-                    "link":"/careers",
-                    "text":"Careers"
-                }
-            ]
-        },
-        {
-            "title": "Partners",
-            "menu":[
-                {
-                    "link":"http://www.vivint.com/",
-                    "text":"Vivint Smart Home"
-                },
-                {
-                    "link":"http://investors.vivintsolar.com/company/investors/Press-Releases/default.aspx",
-                    "text":"Press"
-                },
-                {
-                    "link":"http://investors.vivintsolar.com/",
-                    "text":"Investors"
-                }
-            ]
-        },
-        {
-            "title": "Connect",
-            "menu":[
-                {
-                    "link":"https://www.facebook.com/VivintSolar",
-                    "text":"Facebook"
-                },
-                {
-                    "link":"https://twitter.com/VivintSolar",
-                    "text":"Twitter"
-                },
-                {
-                    "link":"http://www.instagram.com/vivintsolar",
-                    "text":"Instagram"
-                },
-                {
-                    "link":"https://www.youtube.com/vivintsolar",
-                    "text":"YouTube"
-                }
-            ]
-        }
-    ],
-    "jsURL":"https://s3-us-west-2.amazonaws.com/com.vivintsolar.sites/daylight/js/daylight.min.js"
+	"menus":[
+		{
+			"title": "Better Power",
+			"menu":[
+				{
+					"link":"/how-solar-works",
+					"text":"How Solar Works"
+				},
+				{
+					"link":"/solar-made-simple",
+					"text":"Solar Process"
+				}
+			]
+		},
+		{
+			"title": "Community",
+			"menu":[
+				{
+					"link":"/customer-reviews",
+					"text":"Customer Reviews"
+				},
+				{
+					"link":"/coverage",
+					"text":"Coverage Areas"
+				}
+			]
+		},
+		{
+			"title": "Get Started",
+			"menu":[
+				{
+					"link":"/get-a-quote",
+					"text":"Get Your Free Quote"
+				}
+			]
+		},
+		{
+			"title": "Company",
+			"menu":[
+				{
+					"link":"/about-us",
+					"text":"About Us"
+				},
+				{
+					"link":"/leadership",
+					"text":"Leadership"
+				},
+				{
+					"link":"/careers",
+					"text":"Careers"
+				},
+				{
+					"link":"http://investors.vivintsolar.com/company/investors/Press-Releases/default.aspx",
+					"text":"Newsroom"
+				}
+			]
+		},
+		{
+			"title": "Partners",
+			"menu":[
+				{
+					"link":"http://www.vivint.com/",
+					"text":"Vivint Smart Home"
+				},
+				{
+					"link":"http://investors.vivintsolar.com/",
+					"text":"Investors"
+				}
+			]
+		},
+		{
+			"title": "Connect",
+			"menu":[
+				{
+					"link":"https://www.facebook.com/VivintSolar",
+					"text":"Facebook"
+				},
+				{
+					"link":"https://twitter.com/VivintSolar",
+					"text":"Twitter"
+				},
+				{
+					"link":"http://www.instagram.com/vivintsolar",
+					"text":"Instagram"
+				},
+				{
+					"link":"https://www.youtube.com/vivintsolar",
+					"text":"YouTube"
+				}
+			]
+		}
+	],
+	"jsURL":"https://s3-us-west-2.amazonaws.com/com.vivintsolar.sites/daylight/js/daylight.min.js"
 }
