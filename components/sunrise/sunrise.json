@@ -1,7 +1,7 @@
 {
     "menu": [{
-            "link": "/get-a-quote",
-            "text": "Check Availability",
+            "link": "/coverage",
+            "text": "Get Started",
             "class": "sunrise__availability"
         }, {
             "link": "/solar-made-simple",
