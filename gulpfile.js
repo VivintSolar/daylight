@@ -36,16 +36,16 @@ gulp.task('watch:sass', function () {
     gulp.watch(sassinput, ['sass']);
 });
 
-gulp.task('watch:html', function () {
-    gulp.watch(htmlinput, ['html']).on('change', browserSync.reload);
-});
+// gulp.task('watch:html', function () {
+//     gulp.watch(htmlinput, ['html']).on('change', browserSync.reload);
+// });
 
 gulp.task('watch:js', function () {
     gulp.watch(jsinput, ['js']).on('change', browserSync.reload);
 });
 
 gulp.task('watch:jade', function () {
-    gulp.watch([jadeinput,'./components/**/*.json'], ['jade','html']).on('change', browserSync.reload);
+    gulp.watch([jadeinput,'./components/**/*.json'], ['jade','html','makeJSON']).on('change', browserSync.reload);
 });
 
 gulp.task('sass', function () {
@@ -140,6 +140,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('watch', ['watch:sass', 'watch:html', 'watch:js', 'watch:jade']);
+gulp.task('watch', ['watch:sass', 'watch:jade', 'watch:js']);
 
 gulp.task('default', ['sass', 'watch', 'browser-sync']);
