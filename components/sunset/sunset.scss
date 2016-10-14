@@ -12,7 +12,7 @@
         }
     }
     h3 {
-        color: $color__gray--700;
+        color: $color__gray--900;
         font-size: $font__size--500;
         margin-top: $spacing--200;
         margin-bottom: $spacing--100;
@@ -61,7 +61,7 @@
         min-width:150px;
     }
     &__legal {
-        background-color: $color__gray--600;
+        background-color: $color__gray--700;
         color: $color__white;
         display:flex;
         flex-direction: row;
