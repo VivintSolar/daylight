@@ -67,19 +67,17 @@
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+        align-items: center;
         padding-top: $spacing--200;
         padding-bottom: $spacing--200;
         &-links {
-            width: 30%;
             min-width:300px;
             align-content: center;
             display:flex;
             align-items: center;
             white-space: nowrap;
-            margin-bottom: $spacing--300;
-            @media (min-width: $breakpoint--500) {
-                margin-bottom: 0;
-            }
+            margin: $spacing--300;
+
             a {
                 font-size: $font__size--200;
                 display: inline-block;
