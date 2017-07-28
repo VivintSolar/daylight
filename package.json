@@ -1,5 +1,5 @@
 {
-  "name": "@slr/daylight",
+  "name": "@vivintsolar/daylight",
   "version": "0.0.29",
   "description": "The common header and footer for vivint solar.",
   "keywords": [
@@ -36,10 +36,7 @@
     "gulp-path": "3.0.x",
     "gulp-combine-mq": "^0.4.0",
     "gulp-clean-css": "^2.0.12",
-    "@slr/lumen-sass": "0.1.x",
-    "@slr/lumen-layout": "0.0.x"
-  },
-  "publishConfig": {
-    "registry": "http://npm.gosolar.com"
+    "@vivintsolar/lumen-sass": "0.1.x",
+    "@vivintsolar/lumen-layout": "0.0.x"
   }
 }
