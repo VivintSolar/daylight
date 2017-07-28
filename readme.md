@@ -7,13 +7,13 @@ To run the project
 ## Installation
 
 ```
-npm install --save @slr/daylight
+npm install --save @vivintsolar/daylight
 ```
 
 or add the following to your `package.json`
 
 ```
-"@slr/daylight": "^0.0",
+"@vivintsolar/daylight": "^0.0",
 ```
 
 ## Usage
